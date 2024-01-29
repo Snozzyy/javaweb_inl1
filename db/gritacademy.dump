@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.29, for Win64 (x86_64)
 --
--- Host: localhost    Database: gritacademy
+-- Host: 127.0.0.1    Database: gritacademy
 -- ------------------------------------------------------
 -- Server version	5.5.5-10.4.32-MariaDB
 
@@ -57,7 +57,7 @@ CREATE TABLE `courses` (
   `yhp` int(11) NOT NULL,
   `description` text DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -66,7 +66,7 @@ CREATE TABLE `courses` (
 
 LOCK TABLES `courses` WRITE;
 /*!40000 ALTER TABLE `courses` DISABLE KEYS */;
-INSERT INTO `courses` VALUES (1,'Konsultrollen',25,'Lär dig bli en prima konsult'),(2,'Advancerad Javaprogrammering',25,'Bli 1337-programmerare');
+INSERT INTO `courses` VALUES (1,'Konsultrollen',25,'Learn how to become a great consult'),(2,'Advancerad Javaprogrammering',25,'Become a 1337-programmer'),(3,'HTML & CSS ',20,'Learn how to create websites'),(4,'Databaser och databasdesign',20,'Learn to design and create databases');
 /*!40000 ALTER TABLE `courses` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -84,7 +84,7 @@ CREATE TABLE `students` (
   `city` text DEFAULT NULL,
   `interests` text DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -93,7 +93,7 @@ CREATE TABLE `students` (
 
 LOCK TABLES `students` WRITE;
 /*!40000 ALTER TABLE `students` DISABLE KEYS */;
-INSERT INTO `students` VALUES (1,'Donald','Duck','Duckburg',NULL),(2,'Hank','Hill','Arlene','Propane');
+INSERT INTO `students` VALUES (1,'Oliver','Schuller','Glimåkra','Music'),(2,'Kalle','Persson','Malmö','Knitting'),(3,'Lena','Axelsson','Helsingborg','Cooking'),(4,'Frans','Granqvist','Lund','Rock climbing'),(5,'Hanna','Pihl','Malmö','Movies');
 /*!40000 ALTER TABLE `students` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -110,4 +110,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-01-26 13:35:43
+-- Dump completed on 2024-01-29 19:05:24

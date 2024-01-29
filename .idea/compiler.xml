@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="javaweb_inl1" options="-endorseddirs C:\Users\olive\Documents\GitHub\javaweb_inl1\target/endorsed" />
+      <module name="javaweb_inl1" options="-endorseddirs C:\Users\olive\Desktop\Skola\javaweb_inl1\target/endorsed" />
     </option>
   </component>
 </project>
