@@ -32,22 +32,19 @@ public class CoursesServlet extends HttpServlet {
 
             out.println("<html>");
             out.println("<head>");
+            out.println("<link rel=\"stylesheet\" href=\"css/style.css\">");
             out.println("<title>Courses</title>");
-
-            out.println("<style>");
-            out.println("table, th, td {");
-            out.println("border:1px solid black;}");
-            out.println("</style>");
 
             out.println("</head>");
             out.println("<body>");
-            out.println("<div class=\"header\">");
+            out.println("<nav class=\"navbar\">");
             out.println("<a href=\"/\">Home</a>");
             out.println("<a href=\"/students\">Students</a>");
             out.println("<a href=\"/courses\">Courses</a>");
             out.println("<a href=\"/attendance\">Attendance</a>");
-            out.println("</div>");
-            out.println("<table style = \"border:px solid black\">");
+            out.println("</nav>");
+            out.println("<div class=\"tables\">");
+            out.println("<table>");
             out.println("<tr>");
             out.println("<th>Name</th>");
             out.println("<th>Yhp</th>");
@@ -67,6 +64,7 @@ public class CoursesServlet extends HttpServlet {
             }
             con.close();
 
+            out.println("</div>");
             out.println("</body>");
             out.println("</html>");
 

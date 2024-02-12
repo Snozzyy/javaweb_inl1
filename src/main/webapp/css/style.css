@@ -1,0 +1,37 @@
+table, th, td {
+    border: 1px solid black;
+    margin: 10px;
+    width: 33%;
+    font-size: 26px;
+}
+
+nav {
+    text-align: center;
+    background-color: green;
+    margin-bottom: 10px;
+    height: 35px;
+    padding: 15px;
+}
+
+a {
+    padding: 20px;
+    color: black;
+}
+
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+}
+
+.tables {
+    justify-content: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 75%;
+    margin: auto;
+}
